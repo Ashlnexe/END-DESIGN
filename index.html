@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDL — End Design Studios</title>
+  <meta name="description" content="End Design Studios — a collective of talented designers building on expertise in hospitality and interiors." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700,400i,500i&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 1 — HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+
+    <!-- Video Background -->
+    <div class="hero__bg">
+      <video autoplay muted loop playsinline class="hero__video">
+        <source src="hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="nav">
+      <!-- Logo -->
+      <a href="#home" class="nav__logo" id="logo">
+        <span class="nav__logo-text">END</span>
+      </a>
+
+      <!-- Center links -->
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#projects"    class="nav__link" id="nav-projects">Projects</a>
+        <a href="#expertise"   class="nav__link" id="nav-expertise">Expertise</a>
+        <a href="#practice"    class="nav__link" id="nav-practice">Practice</a>
+        <a href="#studios"     class="nav__link" id="nav-studios">Studios</a>
+        <a href="#specialists" class="nav__link" id="nav-specialists">Specialists</a>
+      </nav>
+
+      <!-- Search icon -->
+      <button class="nav__search" id="search-btn" aria-label="Search" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+          width="20" height="20" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.5"/>
+          <line x1="15.5" y1="15.5" x2="22" y2="22"/>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Hero Headline — cascading right -->
+    <div class="hero__content">
+      <h1 class="hero__headline" id="hero-headline">
+        <span class="hero__line hero__line--1">Design that</span>
+        <span class="hero__line hero__line--2">gives form</span>
+        <span class="hero__line hero__line--3">to emotion</span>
+      </h1>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2 — WHO WE ARE
+  ═══════════════════════════════════════════ -->
+  <section class="who" id="about">
+    <div class="who__inner">
+
+      <h2 class="who__heading">Who We Are</h2>
+
+      <div class="who__grid">
+        <!-- Left image -->
+        <div class="who__img-wrap who__img-wrap--main">
+          <img src="interior1.jpg" alt="Artech Rainforest interior" class="who__img" />
+          <p class="who__caption">Artech Rainforest, Kowadiar<br>Thiruvananthapuram.</p>
+        </div>
+
+        <!-- Right: text + second image -->
+        <div class="who__right">
+          <div class="who__text-block">
+            <span class="who__label">OverView</span>
+            <p class="who__body">
+              <strong>End Design Studios</strong> is a multidisciplinary design practice rooted
+              in the belief that space shapes experience. We craft interiors that are at once
+              deeply considered and effortlessly liveable — bringing together architecture,
+              material culture, and light into a single, cohesive narrative for every project.
+            </p>
+          </div>
+          <div class="who__img-wrap who__img-wrap--secondary">
+            <img src="interior2.jpg" alt="Artech Rainforest detail" class="who__img" />
+            <p class="who__caption">Artech Rainforest, Kowadiar<br>Thiruvananthapuram.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3 — FEATURED PROJECT
+  ═══════════════════════════════════════════ -->
+  <div class="featured-scroll-wrapper" id="featured">
+    
+    <div class="featured__images">
+      <div class="featured__img-layer featured__img-layer--1"></div>
+      <div class="featured__img-layer featured__img-layer--2"></div>
+      <div class="featured__img-layer featured__img-layer--3"></div>
+    </div>
+
+    <div class="featured__ui">
+      <div class="featured__overlay"></div>
+      
+      <div class="featured__inner">
+        <div class="featured__left">
+          <h2 class="featured__title">Jumeirah Marsa Al<br>Arab</h2>
+          <a href="#" class="featured__btn">View Project</a>
+        </div>
+
+        <div class="featured__right">
+          <div class="featured__info">
+            <span>HBA Dubai & Light</span>
+            <span>Directions</span>
+          </div>
+          <div class="featured__info">
+            <span>Hotel & Branded</span>
+            <span>Residences</span>
+          </div>
+          <div class="featured__info">
+            <span>Dubai</span>
+          </div>
+          <div class="featured__info">
+            <span>2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4 — COLLECTIVE EXCELLENCE
+  ═══════════════════════════════════════════ -->
+  <section class="collective" id="service">
+    <div class="collective__inner">
+
+      <div class="collective__left">
+        <h2 class="collective__heading">
+          <span>Collective<br>Excellence</span>
+        </h2>
+      </div>
+
+      <div class="collective__right">
+        <p class="collective__body">
+          We are a collective of talented individuals with proven pedigree.
+          Building on our expertise in hospitality and interiors, we now offer
+          a broad range of services with the diversity of experience, skill and
+          style to meet any design challenge.
+        </p>
+        <a href="#projects" class="collective__btn" id="btn-our-people">Our People</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4 — LEADERSHIP TEAM
+  ═══════════════════════════════════════════ -->
+  <section class="leadership" id="projects">
+    <div class="leadership__inner">
+
+      <h2 class="leadership__heading">Leadership<br>Team</h2>
+
+      <div class="leadership__grid">
+
+        <article class="leader-card" id="leader-1">
+          <div class="leader-card__img-wrap">
+            <img src="leader1.jpg" alt="Leadership member" class="leader-card__img" />
+          </div>
+          <div class="leader-card__info">
+            <p class="leader-card__name">Arjun Menon</p>
+            <p class="leader-card__role">Founding Principal</p>
+          </div>
+        </article>
+
+        <article class="leader-card" id="leader-2">
+          <div class="leader-card__img-wrap">
+            <img src="leader2.jpg" alt="Leadership member" class="leader-card__img" />
+          </div>
+          <div class="leader-card__info">
+            <p class="leader-card__name">Priya Nair</p>
+            <p class="leader-card__role">Design Director</p>
+          </div>
+        </article>
+
+        <article class="leader-card" id="leader-3">
+          <div class="leader-card__img-wrap">
+            <img src="leader3.jpg" alt="Leadership member" class="leader-card__img" />
+          </div>
+          <div class="leader-card__info">
+            <p class="leader-card__name">Rahul Iyer</p>
+            <p class="leader-card__role">Creative Director</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <span class="footer__logo">EDL</span>
+        <p class="footer__tagline">End Design Studios</p>
+      </div>
+      <div class="footer__right">
+        <p class="footer__copy">© 2025 End Design Studios. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
