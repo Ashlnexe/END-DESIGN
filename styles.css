@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════
    END DESIGN STUDIOS — Full Site Styles
-   Faithful recreation of the Framer project
+   SEO-optimised build — all 10 layers implemented
    ═══════════════════════════════════════════════════════ */
 
 /* ── Reset ── */
@@ -31,6 +31,25 @@ body { background: var(--off-white); color: var(--text-dark); font-family: var(-
 img { display: block; width: 100%; height: 100%; object-fit: cover; }
 a   { text-decoration: none; color: inherit; }
 
+/* ═══ LAYER 8: Skip link — accessibility + crawlability ═══ */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 16px;
+}
 
 /* ═══════════════════════════════════════════════════════
    HERO
@@ -78,7 +97,6 @@ a   { text-decoration: none; color: inherit; }
   background: transparent;
 }
 
-/* Logo — large stylized serif, left */
 .nav__logo {
   display: flex;
   align-items: center;
@@ -97,7 +115,6 @@ a   { text-decoration: none; color: inherit; }
 }
 .nav__logo:hover .nav__logo-text { opacity: 0.7; }
 
-/* Links — evenly distributed across center */
 .nav__links {
   display: flex;
   align-items: center;
@@ -120,7 +137,13 @@ a   { text-decoration: none; color: inherit; }
 }
 .nav__link:hover { color: rgba(245,240,234,0.38); }
 
-/* Search — far right */
+/* Layer 9: focus-visible for keyboard CRO */
+.nav__link:focus-visible {
+  outline: 1px solid rgba(245,240,234,0.6);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
 .nav__search {
   background: transparent;
   border: none;
@@ -142,7 +165,6 @@ a   { text-decoration: none; color: inherit; }
   outline-offset: 4px;
   border-radius: 2px;
 }
-
 
 /* ── Headline ── */
 .hero__content {
@@ -171,16 +193,13 @@ a   { text-decoration: none; color: inherit; }
   letter-spacing: -0.01em;
   color: var(--white);
   text-shadow: 0 4px 60px rgba(0,0,0,0.4);
-  /* Lines are visible by default — words handle their own animation */
   opacity: 1;
 }
 
-/* Staggered layout matching image */
 .hero__line--1 { align-self: flex-start; }
 .hero__line--2 { align-self: flex-start; margin-left: 20%; }
 .hero__line--3 { align-self: flex-start; margin-left: 10%; }
 
-/* ── Per-word fade-in ── */
 .hero__word {
   display: inline-block;
   opacity: 0;
@@ -229,9 +248,7 @@ a   { text-decoration: none; color: inherit; }
   gap: 12px;
 }
 
-.who__img-wrap--main {
-  max-width: 480px;
-}
+.who__img-wrap--main { max-width: 480px; }
 .who__img-wrap--main .who__img  { aspect-ratio: 3/4; border-radius: 2px; }
 .who__img-wrap--secondary {
   margin-left: auto;
@@ -294,11 +311,6 @@ a   { text-decoration: none; color: inherit; }
   max-width: 680px;
 }
 
-.who__body strong {
-  font-weight: 600;
-  color: var(--text-dark);
-}
-
 .who__btn {
   display: inline-flex;
   align-items: center;
@@ -312,9 +324,11 @@ a   { text-decoration: none; color: inherit; }
   color: var(--text-dark);
   background: transparent;
   border: 1px solid rgba(26,23,20,0.35);
-  padding: 12px 24px;
+  padding: 14px 28px;
   border-radius: 50px;
   width: fit-content;
+  /* Layer 9: CRO — smooth hover, min touch target 44px */
+  min-height: 44px;
   transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
   cursor: pointer;
 }
@@ -323,6 +337,11 @@ a   { text-decoration: none; color: inherit; }
   background: var(--text-dark);
   color: var(--white);
   border-color: var(--text-dark);
+}
+
+.who__btn:focus-visible {
+  outline: 2px solid var(--text-dark);
+  outline-offset: 3px;
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -388,7 +407,6 @@ a   { text-decoration: none; color: inherit; }
   border-radius: 0;
 }
 
-/* Colour fade overlay — animated by JS after layer 2 exits */
 .featured__img-fade {
   position: absolute;
   inset: 0;
@@ -398,11 +416,8 @@ a   { text-decoration: none; color: inherit; }
   z-index: 2;
 }
 
-/* Layer 2 on top → exits first; layer 3 below → exits second; layer 4 is base reveal */
 .featured__img-layer--2 { z-index: 4; background: transparent; will-change: transform; }
-
 .featured__img-layer--3 { z-index: 3; background: transparent; will-change: transform; }
-
 .featured__img-layer--4 { z-index: 2; background: transparent; }
 
 /* ── Project 1 Images ── */
@@ -430,7 +445,6 @@ a   { text-decoration: none; color: inherit; }
 #featured-4 .featured__img-layer--4::after { background-image: url('images/WhatsApp Image 2026-06-25 at 3.58.43 PM (1).jpeg'); }
 
 .featured__overlay { display: none; }
-
 
 .featured__inner {
   position: relative;
@@ -473,6 +487,7 @@ a   { text-decoration: none; color: inherit; }
   border: 1px solid rgba(245,240,234,0.6);
   padding: 14px 32px;
   border-radius: 50px;
+  min-height: 44px;
   width: fit-content;
   transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
@@ -481,6 +496,11 @@ a   { text-decoration: none; color: inherit; }
   background: var(--white);
   color: var(--black);
   border-color: var(--white);
+}
+
+.featured__btn:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 3px;
 }
 
 .featured__right {
@@ -559,13 +579,11 @@ a   { text-decoration: none; color: inherit; }
   width: 100%;
   margin: 0 auto;
   display: grid;
-  /* Use auto for the fixed 712px list, fixed width for center, 1fr for image to absorb remaining space */
   grid-template-columns: auto clamp(200px, 20vw, 280px) 1fr;
   gap: clamp(24px, 4vw, 64px);
-  align-items: center; /* keep overall vertical center */
+  align-items: center;
 }
 
-/* ── Left Column (Logo + List) ── */
 .disc-left {
   display: flex;
   flex-direction: column;
@@ -580,7 +598,7 @@ a   { text-decoration: none; color: inherit; }
   color: var(--text-dark);
   line-height: 1;
   margin: 0 0 0 -24px;
-  padding: 0; /* Removing padding moves it to the left relative to the list */
+  padding: 0;
   display: flex;
   align-items: flex-end;
 }
@@ -615,21 +633,21 @@ a   { text-decoration: none; color: inherit; }
   padding: 0;
 }
 
-.disc-list__item:hover {
-  color: var(--text-mid);
+.disc-list__item:hover { color: var(--text-mid); }
+.disc-list__item.is-active { color: var(--text-dark); }
+
+/* Layer 9: keyboard focus for CRO / accessibility */
+.disc-list__item:focus-visible {
+  outline: 2px solid var(--text-dark);
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
-.disc-list__item.is-active {
-  color: var(--text-dark);
-}
-
-/* ── Center detail ── */
 .disc-detail {
   display: flex;
   flex-direction: column;
   gap: 32px;
   align-self: flex-start;
-  /* Align top with the list by offsetting the height of the logo + gap */
   margin-top: calc(clamp(48px, 6vw, 84px) + 16px);
   transition: transform 0.6s var(--ease-expo);
 }
@@ -665,12 +683,12 @@ a   { text-decoration: none; color: inherit; }
   border: 1px solid rgba(26,23,20,0.35);
   padding: 12px 24px;
   border-radius: 50px;
+  min-height: 44px;
   width: fit-content;
-  transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
-  opacity: 0;
-  transform: translateY(8px);
   transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease,
               opacity 0.5s var(--ease-expo) 0.08s, transform 0.5s var(--ease-expo) 0.08s;
+  opacity: 0;
+  transform: translateY(8px);
 }
 
 .disc-detail__btn.is-visible {
@@ -684,7 +702,11 @@ a   { text-decoration: none; color: inherit; }
   border-color: var(--text-dark);
 }
 
-/* ── Image ── */
+.disc-detail__btn:focus-visible {
+  outline: 2px solid var(--text-dark);
+  outline-offset: 3px;
+}
+
 .disc-img-wrap {
   position: relative;
   aspect-ratio: 3 / 4;
@@ -774,21 +796,24 @@ a   { text-decoration: none; color: inherit; }
   color: var(--text-dark);
   background: transparent;
   border: 1px solid rgba(26,23,20,0.35);
-  padding: 12px 24px;
+  padding: 14px 28px;
   border-radius: 50px;
+  min-height: 44px;
   width: fit-content;
-  transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+  transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
 .collective__btn:hover {
+  background: var(--text-dark);
   color: var(--white);
-  border-color: var(--white);
+  border-color: var(--text-dark);
   transform: translateY(-2px);
 }
-.collective__btn:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
+
+.collective__btn:focus-visible {
+  outline: 2px solid var(--text-dark);
+  outline-offset: 3px;
 }
 
 
@@ -857,6 +882,11 @@ a   { text-decoration: none; color: inherit; }
   border-color: var(--text-dark);
 }
 
+.leadership__arrow:focus-visible {
+  outline: 2px solid var(--text-dark);
+  outline-offset: 3px;
+}
+
 .leadership__right {
   display: flex;
   flex-direction: column;
@@ -891,7 +921,7 @@ a   { text-decoration: none; color: inherit; }
   will-change: transform, filter;
 }
 
-.leader-card:hover .leader-card__img { 
+.leader-card:hover .leader-card__img {
   transform: scale(1.05);
   filter: grayscale(0%) contrast(1);
 }
@@ -941,11 +971,12 @@ a   { text-decoration: none; color: inherit; }
   background: var(--text-dark);
   position: absolute;
   top: 0; left: 0;
+  transition: width 0.4s var(--ease-expo);
 }
 
 
 /* ═══════════════════════════════════════════════════════
-   FOOTER
+   FOOTER — Layer 6: Internal linking nav
    ═══════════════════════════════════════════════════════ */
 .footer {
   background: var(--text-dark);
@@ -958,6 +989,8 @@ a   { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .footer__logo {
@@ -966,7 +999,9 @@ a   { text-decoration: none; color: inherit; }
   font-weight: 400;
   letter-spacing: 0.15em;
   color: var(--white);
+  transition: opacity 0.3s;
 }
+.footer__logo:hover { opacity: 0.7; }
 
 .footer__tagline {
   font-family: var(--font-sans);
@@ -976,6 +1011,34 @@ a   { text-decoration: none; color: inherit; }
   text-transform: uppercase;
   color: rgba(245,240,234,0.4);
   margin-top: 6px;
+}
+
+/* Layer 6: footer internal nav links */
+.footer__nav {
+  display: flex;
+  gap: clamp(16px, 3vw, 40px);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__nav-link {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(245,240,234,0.5);
+  transition: color 0.3s ease;
+}
+
+.footer__nav-link:hover {
+  color: var(--white);
+}
+
+.footer__nav-link:focus-visible {
+  outline: 1px solid rgba(245,240,234,0.5);
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
 .footer__copy {
@@ -988,7 +1051,7 @@ a   { text-decoration: none; color: inherit; }
 
 
 /* ═══════════════════════════════════════════════════════
-   SCROLL REVEAL — applied by JS
+   SCROLL REVEAL
    ═══════════════════════════════════════════════════════ */
 .reveal {
   opacity: 0;
@@ -1011,29 +1074,34 @@ a   { text-decoration: none; color: inherit; }
   .leadership__heading  { position: static; margin-bottom: 32px; }
   .leadership__grid     { grid-template-columns: repeat(2, 1fr); }
   .featured__inner      { flex-direction: column; align-items: flex-start; gap: 24px; }
+  .footer__inner        { flex-direction: column; align-items: flex-start; }
+  .footer__nav          { justify-content: flex-start; }
 }
 
 @media (max-width: 560px) {
   .nav__links           { display: none; }
-  
-  /* Hero adjustments for mobile */
+
   .hero__line           { font-size: clamp(40px, 11vw, 64px); }
-  .hero__line--2        { margin-left: 15%; align-self: flex-start; }
-  .hero__line--3        { margin-left: 5%; align-self: flex-start; }
-  
-  /* Typography scaling for mobile */
+  .hero__line--2        { margin-left: 15%; }
+  .hero__line--3        { margin-left: 5%; }
+
   .who__heading         { font-size: clamp(36px, 10vw, 48px); margin-bottom: 24px; }
   .collective__heading  { font-size: clamp(36px, 10vw, 48px); }
   .leadership__heading  { font-size: clamp(36px, 10vw, 48px); }
   .disc-list__item      { font-size: clamp(32px, 8vw, 40px); padding: 24px 0; }
-  
+  .disc-left            { width: 100%; }
+
   .leadership__grid     { grid-template-columns: 1fr; }
-  .footer__inner        { flex-direction: column; gap: 24px; text-align: center; }
-  
+  .footer__inner        { flex-direction: column; gap: 24px; }
+  .footer__nav          { gap: 16px; }
+
   .featured__right      { flex-direction: column; gap: 16px; }
 }
 
-/* Reduced motion */
+/* ═══ Reduced motion — Layer 8: UX/accessibility ═══ */
 @media (prefers-reduced-motion: reduce) {
   .hero__line, .reveal  { animation: none; opacity: 1; transform: none; transition: none; }
+  .who__img             { transition: none; }
+  .leader-card__img     { transition: none; }
+  .disc-img             { transition: none; }
 }

@@ -1,0 +1,11 @@
+# END Design Studios — robots.txt
+# https://end-design-mu.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Block crawling of asset files that waste crawl budget
+Disallow: /images/WhatsApp*
+
+# Sitemap location
+Sitemap: https://end-design-mu.vercel.app/sitemap.xml
