@@ -112,8 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Dynamically update button text based on label
         const label = discData[index].label.toUpperCase()
-        const isHBA = ['ARCHITECTURE', 'DIGITAL'].includes(label)
-        discBtn.textContent = `VIEW ${isHBA ? 'HBA ' : ''}${label}`
+        const isEND = ['ARCHITECTURE', 'DIGITAL'].includes(label)
+        discBtn.textContent = `VIEW ${isEND ? 'END ' : ''}${label}`
         
         discBody.classList.add('is-visible')
         discBtn.classList.add('is-visible')
