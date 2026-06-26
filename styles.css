@@ -1010,14 +1010,27 @@ a   { text-decoration: none; color: inherit; }
   .leadership__inner    { grid-template-columns: 1fr; }
   .leadership__heading  { position: static; margin-bottom: 32px; }
   .leadership__grid     { grid-template-columns: repeat(2, 1fr); }
+  .featured__inner      { flex-direction: column; align-items: flex-start; gap: 24px; }
 }
 
 @media (max-width: 560px) {
   .nav__links           { display: none; }
-  .hero__line--2        { align-self: center; }
-  .hero__line--3        { align-self: flex-end; }
+  
+  /* Hero adjustments for mobile */
+  .hero__line           { font-size: clamp(40px, 11vw, 64px); }
+  .hero__line--2        { margin-left: 15%; align-self: flex-start; }
+  .hero__line--3        { margin-left: 5%; align-self: flex-start; }
+  
+  /* Typography scaling for mobile */
+  .who__heading         { font-size: clamp(36px, 10vw, 48px); margin-bottom: 24px; }
+  .collective__heading  { font-size: clamp(36px, 10vw, 48px); }
+  .leadership__heading  { font-size: clamp(36px, 10vw, 48px); }
+  .disc-list__item      { font-size: clamp(32px, 8vw, 40px); padding: 24px 0; }
+  
   .leadership__grid     { grid-template-columns: 1fr; }
   .footer__inner        { flex-direction: column; gap: 24px; text-align: center; }
+  
+  .featured__right      { flex-direction: column; gap: 16px; }
 }
 
 /* Reduced motion */
