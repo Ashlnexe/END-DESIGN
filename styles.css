@@ -393,8 +393,8 @@ a   { text-decoration: none; color: inherit; }
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  height: 68%;
+  width: 90%;
+  height: 85%;
   background-size: cover;
   background-position: center;
   border-radius: 0 0 4px 4px;
@@ -715,7 +715,7 @@ a   { text-decoration: none; color: inherit; }
   overflow: hidden;
   border-radius: 3px;
   align-self: start;
-  margin-top: -60px;
+  margin-top: 60px;
 }
 
 .disc-img {
