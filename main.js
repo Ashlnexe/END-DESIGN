@@ -111,19 +111,19 @@ document.addEventListener('DOMContentLoaded', () => {
      Layer 9: CRO — keyboard support added
   ═══════════════════════════════════════════════════════ */
   const discData = [
-    { label: 'interiors',    img: 'images/WhatsApp Image 2026-06-25 at 3.58.41 PM (1).jpeg',   body: 'Deeply considered spaces that unite architecture, material culture, and light into a single, cohesive narrative for every project.' },
-    { label: 'architecture', img: 'images/WhatsApp Image 2026-06-25 at 3.58.41 PM (2).jpeg',   body: 'A global architecture practice, delivering transformative design solutions of lasting quality for a diverse range of clients.' },
-    { label: 'art',          img: 'images/WhatsApp Image 2026-06-25 at 3.58.41 PM.jpeg',        body: 'Curated art programs that elevate spaces and inspire.' },
-    { label: 'digital',      img: 'images/WhatsApp Image 2026-06-25 at 3.58.42 PM (1).jpeg',   body: 'Innovative digital experiences integrated seamlessly into physical environments.' },
-    { label: 'f&b',          img: 'images/WhatsApp Image 2026-06-25 at 3.58.42 PM (2).jpeg',   body: 'Food and beverage concepts where atmosphere and identity are as considered as the menu itself.' },
-    { label: 'graphics',     img: 'images/WhatsApp Image 2026-06-25 at 3.58.42 PM.jpeg',        body: 'Visual communication and branding that shape the identity of a place.' },
-    { label: 'landscape',    img: 'images/WhatsApp Image 2026-06-25 at 3.58.43 PM (1).jpeg',   body: 'Exterior environments that connect harmoniously with architecture and nature.' },
-    { label: 'leisure',      img: 'images/WhatsApp Image 2026-06-25 at 3.58.43 PM (2).jpeg',   body: 'Leisure and wellness destinations that place human experience at the centre of every design decision.' },
-    { label: 'light',        img: 'images/WhatsApp Image 2026-06-25 at 3.58.43 PM.jpeg',        body: 'Considered lighting design that sculpts space, evokes emotion, and elevates every environment.' },
-    { label: 'procurement',  img: 'images/WhatsApp Image 2026-06-25 at 3.58.44 PM (1).jpeg',   body: 'Strategic sourcing and procurement for unparalleled quality and value.' },
-    { label: 'product',      img: 'images/WhatsApp Image 2026-06-25 at 3.58.44 PM.jpeg',        body: 'Custom product and furniture design tailored to specific project narratives.' },
-    { label: 'residential',  img: 'images/WhatsApp Image 2026-06-25 at 3.58.45 PM (1).jpeg',   body: 'Bespoke living environments crafted around the rhythms and rituals of the people who inhabit them.' },
-    { label: 'resort',       img: 'images/WhatsApp Image 2026-06-25 at 3.58.45 PM.jpeg',        body: 'Immersive resort environments designed to redefine the guest experience across global destinations.' },
+    { label: 'interiors',    img: 'images/disc-interiors.jpg',    body: 'Deeply considered spaces that unite architecture, material culture, and light into a single, cohesive narrative for every project.' },
+    { label: 'architecture', img: 'images/disc-architecture.jpg', body: 'A global architecture practice, delivering transformative design solutions of lasting quality for a diverse range of clients.' },
+    { label: 'art',          img: 'images/disc-art.jpg',          body: 'Curated art programs that elevate spaces and inspire.' },
+    { label: 'digital',      img: 'images/disc-digital.jpg',      body: 'Innovative digital experiences integrated seamlessly into physical environments.' },
+    { label: 'f&b',          img: 'images/disc-fb.jpg',           body: 'Food and beverage concepts where atmosphere and identity are as considered as the menu itself.' },
+    { label: 'graphics',     img: 'images/disc-graphics.jpg',     body: 'Visual communication and branding that shape the identity of a place.' },
+    { label: 'landscape',    img: 'images/disc-landscape.jpg',    body: 'Exterior environments that connect harmoniously with architecture and nature.' },
+    { label: 'leisure',      img: 'images/disc-leisure.jpg',      body: 'Leisure and wellness destinations that place human experience at the centre of every design decision.' },
+    { label: 'light',        img: 'images/disc-light.jpg',        body: 'Considered lighting design that sculpts space, evokes emotion, and elevates every environment.' },
+    { label: 'procurement',  img: 'images/disc-procurement.jpg',  body: 'Strategic sourcing and procurement for unparalleled quality and value.' },
+    { label: 'product',      img: 'images/disc-product.jpg',      body: 'Custom product and furniture design tailored to specific project narratives.' },
+    { label: 'residential',  img: 'images/disc-residential.jpg',  body: 'Bespoke living environments crafted around the rhythms and rituals of the people who inhabit them.' },
+    { label: 'resort',       img: 'images/disc-resort.jpg',       body: 'Immersive resort environments designed to redefine the guest experience across global destinations.' },
   ]
 
   const discItems   = document.querySelectorAll('.disc-list__item')
