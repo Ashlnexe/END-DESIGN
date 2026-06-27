@@ -714,6 +714,8 @@ a   { text-decoration: none; color: inherit; }
   min-height: 380px;
   overflow: hidden;
   border-radius: 3px;
+  align-self: start;
+  margin-top: -60px;
 }
 
 .disc-img {
