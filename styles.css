@@ -579,7 +579,7 @@ a   { text-decoration: none; color: inherit; }
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr clamp(200px, 20vw, 280px) clamp(220px, 22vw, 360px);
+  grid-template-columns: 1fr clamp(200px, 18vw, 260px) clamp(320px, 38vw, 560px);
   gap: clamp(24px, 4vw, 64px);
   align-items: center;
 }
@@ -711,7 +711,7 @@ a   { text-decoration: none; color: inherit; }
   position: relative;
   width: 100%;
   aspect-ratio: 3 / 4;
-  min-height: 300px;
+  min-height: 480px;
   overflow: hidden;
   border-radius: 3px;
 }
