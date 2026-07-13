@@ -1,572 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0a0806" />
-
-  <!-- ═══ LAYER 4 & 2: Title + Meta Description (Search Intent: Informational + Commercial) ═══ -->
-  <title>END Design Studios — Award-Winning Hospitality & Interior Design</title>
-  <meta name="description" content="END Design Studios is a multidisciplinary design collective with over 50 years of expertise in luxury hospitality, interiors, architecture, and resort design across global destinations." />
-  <meta name="keywords" content="hospitality interior design, luxury hotel design, resort design, interior architecture, END Design Studios, hospitality design firm" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="END Design Studios" />
-
-  <!-- ═══ CANONICAL ═══ -->
-  <link rel="canonical" href="https://end-design-mu.vercel.app/" />
-
-  <!-- ═══ OPEN GRAPH (Layer 4: On-Page SEO — social sharing signals) ═══ -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://end-design-mu.vercel.app/" />
-  <meta property="og:title" content="END Design Studios — Award-Winning Hospitality & Interior Design" />
-  <meta property="og:description" content="A multidisciplinary creative collective with 50+ years of expertise in luxury hospitality and interior design across global destinations." />
-  <meta property="og:image" content="https://end-design-mu.vercel.app/images/alec-cutter-Sfn8f32ZIj0-unsplash.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:site_name" content="END Design Studios" />
-  <meta property="og:locale" content="en_US" />
-
-  <!-- ═══ TWITTER CARD ═══ -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="END Design Studios — Hospitality & Interior Design" />
-  <meta name="twitter:description" content="A multidisciplinary creative collective with 50+ years of expertise in luxury hospitality and interior design." />
-  <meta name="twitter:image" content="https://end-design-mu.vercel.app/images/alec-cutter-Sfn8f32ZIj0-unsplash.jpg" />
-
-  <!-- ═══ LAYER 7: Structured Data / JSON-LD (Authority signals to Google) ═══ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://end-design-mu.vercel.app/#organization",
-        "name": "END Design Studios",
-        "alternateName": "EDL",
-        "url": "https://end-design-mu.vercel.app/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://end-design-mu.vercel.app/images/alec-cutter-Sfn8f32ZIj0-unsplash.jpg"
-        },
-        "description": "END Design Studios is a multidisciplinary design collective with over 50 years of expertise in luxury hospitality, interiors, architecture, and resort design.",
-        "foundingDate": "1975",
-        "numberOfEmployees": {
-          "@type": "QuantitativeValue",
-          "minValue": 50,
-          "maxValue": 200
-        },
-        "knowsAbout": [
-          "Hospitality Interior Design",
-          "Luxury Hotel Design",
-          "Resort Architecture",
-          "Interior Architecture",
-          "Landscape Design",
-          "Lighting Design"
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Design Services",
-          "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interiors Design" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Architecture" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Resort Design" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hospitality Design" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landscape Design" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lighting Design" } }
-          ]
-        },
-        "sameAs": []
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://end-design-mu.vercel.app/#website",
-        "url": "https://end-design-mu.vercel.app/",
-        "name": "END Design Studios",
-        "description": "Award-winning hospitality and interior design collective",
-        "publisher": {
-          "@id": "https://end-design-mu.vercel.app/#organization"
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://end-design-mu.vercel.app/?s={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://end-design-mu.vercel.app/#webpage",
-        "url": "https://end-design-mu.vercel.app/",
-        "name": "END Design Studios — Award-Winning Hospitality & Interior Design",
-        "isPartOf": { "@id": "https://end-design-mu.vercel.app/#website" },
-        "about": { "@id": "https://end-design-mu.vercel.app/#organization" },
-        "description": "Discover END Design Studios — a global collective of hospitality and interior designers crafting transformative luxury environments.",
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://end-design-mu.vercel.app/"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "ItemList",
-        "name": "Featured Projects",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "CreativeWork",
-              "name": "Jumeirah Marsa Al Arab",
-              "description": "Hotel and branded residences in Dubai, designed by END Dubai & Light Directions",
-              "locationCreated": { "@type": "Place", "name": "Dubai, UAE" },
-              "dateCreated": "2025",
-              "creator": { "@id": "https://end-design-mu.vercel.app/#organization" }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "CreativeWork",
-              "name": "One&Only Portonovi",
-              "description": "Resort design in Herceg Novi, Montenegro by END Singapore",
-              "locationCreated": { "@type": "Place", "name": "Herceg Novi, Montenegro" },
-              "dateCreated": "2021",
-              "creator": { "@id": "https://end-design-mu.vercel.app/#organization" }
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
-
-  <!-- ═══ PERFORMANCE: Preconnect + Preload critical assets ═══ -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://api.fontshare.com" />
-  <link rel="preload" as="video" href="hero.mp4" type="video/mp4" />
-  <link rel="preload" as="image" href="images/alec-cutter-Sfn8f32ZIj0-unsplash.jpg" />
-
-  <!-- ═══ FONTS ═══ -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Tenor+Sans&display=swap" rel="stylesheet" />
-  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700,400i,500i&display=swap" rel="stylesheet" />
-
-  <!-- ═══ FAVICON ═══ -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>E</text></svg>" />
-
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOOM Portfolio</title>
+  <meta name="description" content="Portfolio of our premium architectural and interior designs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
-
-  <!-- ═══════════════════════════════════════════
-       SECTION 1 — HERO
-       SEO: H1 with primary keyword, semantic landmark
-  ═══════════════════════════════════════════ -->
-  <section class="hero" id="home" aria-label="Hero">
-
-    <!-- Video Background -->
-    <div class="hero__bg" aria-hidden="true">
-      <video autoplay muted loop playsinline class="hero__video" preload="auto">
-        <source src="hero.mp4" type="video/mp4" />
-      </video>
-      <div class="hero__overlay"></div>
+  
+  <header class="header">
+    <div class="logo-container">
+      <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <!-- Left sloped wedge -->
+        <path d="M2 20V14.5L11 9.5V20H2Z" />
+        <!-- Right vertical pillar -->
+        <path d="M13 6H22V20H13V6Z" />
+      </svg>
+      <span class="logo-text">BLOOM</span>
     </div>
-
-    <!-- Navigation: landmark + skip link for accessibility/crawlability -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header class="nav" role="banner">
-      <a href="/" class="nav__logo" id="logo" aria-label="END Design Studios — Home">
-        <span class="nav__logo-text">END</span>
-      </a>
-
-      <nav class="nav__links" aria-label="Primary navigation">
-        <a href="#projects"    class="nav__link" id="nav-projects">Projects</a>
-        <a href="#expertise"   class="nav__link" id="nav-expertise">Expertise</a>
-        <a href="#practice"    class="nav__link" id="nav-practice">Practice</a>
-        <a href="#studios"     class="nav__link" id="nav-studios">Studios</a>
-        <a href="#specialists" class="nav__link" id="nav-specialists">Specialists</a>
-      </nav>
-
-      <button class="nav__search" id="search-btn" aria-label="Search END Design Studios" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
-          width="20" height="20" aria-hidden="true">
-          <circle cx="10.5" cy="10.5" r="6.5"/>
-          <line x1="15.5" y1="15.5" x2="22" y2="22"/>
-        </svg>
-      </button>
-    </header>
-
-    <!-- H1: Primary keyword targeting "hospitality interior design" ICP -->
-    <div class="hero__content">
-      <h1 class="hero__headline" id="hero-headline">
-        <span class="hero__line hero__line--1">Design that</span>
-        <span class="hero__line hero__line--2">gives form</span>
-        <span class="hero__line hero__line--3">to emotion</span>
-      </h1>
+    <div class="menu-icon">
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
     </div>
+  </header>
 
-  </section>
+  <main>
+    <section class="hero">
+      <h1 class="hero-title">Portfolio</h1>
+    </section>
 
-  <!-- ═══ MAIN CONTENT LANDMARK (crawlability) ═══ -->
-  <main id="main-content">
+    <section class="portfolio-section">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="interior">Interior</button>
+        <button class="filter-btn" data-filter="exterior">Exterior</button>
+        <button class="filter-btn" data-filter="animation">Animation</button>
+      </div>
 
-  <!-- ═══════════════════════════════════════════
-       SECTION 2 — WHO WE ARE
-       SEO: H2 with secondary keywords, descriptive alt text
-  ═══════════════════════════════════════════ -->
-  <section class="who" id="about" aria-labelledby="who-heading">
-    <div class="who__inner">
-
-      <h2 class="who__heading" id="who-heading">Who we are</h2>
-
-      <div class="who__grid">
-        <!-- Left image: descriptive alt with location keyword -->
-        <div class="who__img-wrap who__img-wrap--main">
-          <img
-            src="images/alec-cutter-Sfn8f32ZIj0-unsplash.jpg"
-            alt="Luxury interior design at One&Only Portonovi resort, Herceg Novi, Montenegro — END Design Studios"
-            class="who__img"
-            width="480"
-            height="640"
-            loading="eager"
-            fetchpriority="high"
-          />
-          <p class="who__caption">ONE&amp;ONLY PORTONOVI, HERCEG NOVI, MONTENEGRO</p>
+      <div class="gallery">
+        <!-- Row 1: 50/50 -->
+        <div class="gallery-item span-3" data-category="exterior">
+          <img src="images/pexels-alex-qian-1180283-2343465.jpg" alt="House Exterior" class="gallery-img">
+        </div>
+        <div class="gallery-item span-3" data-category="interior">
+          <img src="images/WhatsApp Image 2026-06-25 at 3.58.41 PM.jpeg" alt="Interior Arch" class="gallery-img">
         </div>
 
-        <!-- Right: text + second image -->
-        <div class="who__right">
-          <div class="who__text-block">
-            <span class="who__label">OVERVIEW</span>
-            <div class="who__body-wrap">
-              <!-- Body copy: keyword-rich, benefit-led (Layer 4: On-Page copy) -->
-              <p class="who__body">
-                For over half a century, END Design has been a leading voice in luxury
-                hospitality and interior design. Today, we are a dynamic and multidisciplinary
-                creative collective, bringing decades of expertise to bear across architecture,
-                interiors, landscape, and resort design worldwide.
-              </p>
-              <a href="#practice" class="who__btn">Our Practice</a>
-            </div>
-          </div>
-          <div class="who__img-wrap who__img-wrap--secondary">
-            <img
-              src="images/danist-soh-dqXiw7nCb9Q-unsplash.jpg"
-              alt="Refined hospitality interior design detail — END Design Studios portfolio"
-              class="who__img"
-              width="480"
-              height="360"
-              loading="lazy"
-            />
-            <p class="who__caption">ONE&amp;ONLY PORTONOVI, HERCEG NOVI, MONTENEGRO</p>
+        <!-- Row 2: 3 equal columns -->
+        <div class="gallery-item span-2" data-category="interior">
+          <img src="interior1.jpg" alt="Bedroom Interior" class="gallery-img">
+        </div>
+        <div class="gallery-item span-2" data-category="exterior">
+          <img src="images/WhatsApp Image 2026-06-25 at 3.58.42 PM.jpeg" alt="Pool" class="gallery-img">
+        </div>
+        <div class="gallery-item span-2 has-text" data-category="exterior">
+          <img src="images/low-angle-greyscale-building-with-modern-brutalist-architecture-sunlight.jpg" alt="Dark House" class="gallery-img">
+          <div class="overlay-text">
+            <span class="title">Morven</span>
+            <span class="subtitle">Scotland</span>
           </div>
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       SECTION 3 — FEATURED PROJECTS
-       SEO: Descriptive headings, keyword-rich titles, proper anchor text
-  ═══════════════════════════════════════════ -->
-
-  <!-- Project 1 -->
-  <article class="featured-scroll-wrapper" id="featured-1" aria-label="Featured project: Jumeirah Marsa Al Arab">
-    <div class="featured__images" aria-hidden="true">
-      <div class="featured__img-layer featured__img-layer--1">
-        <div class="featured__img-fade"></div>
-      </div>
-      <div class="featured__img-layer featured__img-layer--2"></div>
-      <div class="featured__img-layer featured__img-layer--3"></div>
-      <div class="featured__img-layer featured__img-layer--4"></div>
-    </div>
-    <div class="featured__ui">
-      <div class="featured__overlay"></div>
-      <div class="featured__inner">
-        <div class="featured__left">
-          <h2 class="featured__title" id="featured-title-1">Jumeirah Marsa Al Arab</h2>
-          <a href="#projects" class="featured__btn" aria-label="View Jumeirah Marsa Al Arab hotel design project">View Project</a>
+        <!-- Row 3: 50/50 -->
+        <div class="gallery-item span-3" data-category="interior">
+          <img src="interior2.jpg" alt="Wood Interior" class="gallery-img">
         </div>
-        <div class="featured__right" aria-label="Project details">
-          <div class="featured__info"><span>END Dubai &amp; Light</span><span>Directions</span></div>
-          <div class="featured__info"><span>Hotel &amp; Branded</span><span>Residences</span></div>
-          <div class="featured__info"><span>Dubai</span></div>
-          <div class="featured__info"><span>2025</span></div>
+        <div class="gallery-item span-3" data-category="interior">
+          <img src="images/WhatsApp Image 2026-06-25 at 3.58.41 PM (1).jpeg" alt="Arch Ceiling" class="gallery-img">
         </div>
       </div>
-    </div>
-  </article>
+    </section>
+  </main>
 
-  <!-- Project 2 -->
-  <article class="featured-scroll-wrapper" id="featured-2" aria-label="Featured project: Project Title Two">
-    <div class="featured__images" aria-hidden="true">
-      <div class="featured__img-layer featured__img-layer--1"><div class="featured__img-fade"></div></div>
-      <div class="featured__img-layer featured__img-layer--2"></div>
-      <div class="featured__img-layer featured__img-layer--3"></div>
-      <div class="featured__img-layer featured__img-layer--4"></div>
-    </div>
-    <div class="featured__ui">
-      <div class="featured__overlay"></div>
-      <div class="featured__inner">
-        <div class="featured__left">
-          <h2 class="featured__title" id="featured-title-2">Project Title Two</h2>
-          <a href="#projects" class="featured__btn" aria-label="View hospitality interior design project">View Project</a>
-        </div>
-        <div class="featured__right" aria-label="Project details">
-          <div class="featured__info"><span>Studio Name</span><span>&amp; Partners</span></div>
-          <div class="featured__info"><span>Hospitality</span><span>Interior</span></div>
-          <div class="featured__info"><span>Location</span></div>
-          <div class="featured__info"><span>2024</span></div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- Project 3 -->
-  <article class="featured-scroll-wrapper" id="featured-3" aria-label="Featured project: Project Title Three">
-    <div class="featured__images" aria-hidden="true">
-      <div class="featured__img-layer featured__img-layer--1"><div class="featured__img-fade"></div></div>
-      <div class="featured__img-layer featured__img-layer--2"></div>
-      <div class="featured__img-layer featured__img-layer--3"></div>
-      <div class="featured__img-layer featured__img-layer--4"></div>
-    </div>
-    <div class="featured__ui">
-      <div class="featured__overlay"></div>
-      <div class="featured__inner">
-        <div class="featured__left">
-          <h2 class="featured__title" id="featured-title-3">Project Title Three</h2>
-          <a href="#projects" class="featured__btn" aria-label="View residential design project">View Project</a>
-        </div>
-        <div class="featured__right" aria-label="Project details">
-          <div class="featured__info"><span>Studio Name</span><span>&amp; Partners</span></div>
-          <div class="featured__info"><span>Residential</span><span>Design</span></div>
-          <div class="featured__info"><span>Location</span></div>
-          <div class="featured__info"><span>2024</span></div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- Project 4 -->
-  <article class="featured-scroll-wrapper" id="featured-4" aria-label="Featured project: One&Only Portonovi">
-    <div class="featured__images" aria-hidden="true">
-      <div class="featured__img-layer featured__img-layer--1"><div class="featured__img-fade"></div></div>
-      <div class="featured__img-layer featured__img-layer--2"></div>
-      <div class="featured__img-layer featured__img-layer--3"></div>
-      <div class="featured__img-layer featured__img-layer--4"></div>
-    </div>
-    <div class="featured__ui">
-      <div class="featured__overlay"></div>
-      <div class="featured__inner">
-        <div class="featured__left">
-          <h2 class="featured__title" id="featured-title-4">One&amp;Only Portonovi,<br>Herceg Novi</h2>
-          <a href="#projects" class="featured__btn" aria-label="View One and Only Portonovi resort design project">View Project</a>
-        </div>
-        <div class="featured__right" aria-label="Project details">
-          <div class="featured__info"><span>END Singapore</span></div>
-          <div class="featured__info"><span>Resort</span></div>
-          <div class="featured__info"><span>Montenegro</span></div>
-          <div class="featured__info"><span>2021</span></div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- ═══════════════════════════════════════════
-       SECTION — DISCIPLINES / EXPERTISE
-       SEO: H2, keyword-rich list items, descriptive section
-  ═══════════════════════════════════════════ -->
-  <section class="disciplines" id="expertise" aria-labelledby="disciplines-heading">
-    <div class="disciplines__inner">
-
-      <div class="disc-left">
-        <h2 class="disc-logo" id="disciplines-heading" aria-label="END Plus — Our design disciplines">
-          END<span class="disc-logo-plus">+</span>
-        </h2>
-        <!-- Layer 4: keyword-rich list — each item is a service Google can index -->
-        <ul class="disc-list" id="disc-list" aria-label="Our design disciplines and services">
-          <li class="disc-list__item" data-index="0"  id="disc-0" role="button" tabindex="0" aria-label="Interiors design services">interiors</li>
-          <li class="disc-list__item is-active" data-index="1"  id="disc-1" role="button" tabindex="0" aria-label="Architecture services">architecture</li>
-          <li class="disc-list__item" data-index="2"  id="disc-2" role="button" tabindex="0" aria-label="Art curation services">art</li>
-          <li class="disc-list__item" data-index="3"  id="disc-3" role="button" tabindex="0" aria-label="Digital design services">digital</li>
-          <li class="disc-list__item" data-index="4"  id="disc-4" role="button" tabindex="0" aria-label="Food and beverage design">f&amp;b</li>
-          <li class="disc-list__item" data-index="5"  id="disc-5" role="button" tabindex="0" aria-label="Graphics and branding">graphics</li>
-          <li class="disc-list__item" data-index="6"  id="disc-6" role="button" tabindex="0" aria-label="Landscape design">landscape</li>
-          <li class="disc-list__item" data-index="7"  id="disc-7" role="button" tabindex="0" aria-label="Leisure design">leisure</li>
-          <li class="disc-list__item" data-index="8"  id="disc-8" role="button" tabindex="0" aria-label="Lighting design">light</li>
-          <li class="disc-list__item" data-index="9"  id="disc-9" role="button" tabindex="0" aria-label="Procurement services">procurement</li>
-          <li class="disc-list__item" data-index="10" id="disc-10" role="button" tabindex="0" aria-label="Product design">product</li>
-          <li class="disc-list__item" data-index="11" id="disc-11" role="button" tabindex="0" aria-label="Residential interior design">residential</li>
-          <li class="disc-list__item" data-index="12" id="disc-12" role="button" tabindex="0" aria-label="Resort design">resort</li>
-        </ul>
-      </div>
-
-      <div class="disc-detail" id="disc-detail">
-        <p class="disc-detail__body" id="disc-body">
-          Deeply considered spaces that unite architecture, material culture, and light into a single, cohesive narrative for every project.
-        </p>
-        <a href="#projects" class="disc-detail__btn" id="disc-btn" aria-label="View our interior design projects">View Projects</a>
-      </div>
-
-      <div class="disc-img-wrap" id="disc-img-wrap" aria-hidden="true">
-        <img src="interior1.jpg" alt="END Design Studios discipline preview" class="disc-img" loading="lazy" width="400" height="533" />
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       SECTION 4 — COLLECTIVE EXCELLENCE
-       SEO: Persuasive benefit-led copy (Layer 4), internal link anchor
-  ═══════════════════════════════════════════ -->
-  <section class="collective" id="practice" aria-labelledby="collective-heading">
-    <div class="collective__inner">
-
-      <div class="collective__left">
-        <h2 class="collective__heading" id="collective-heading">
-          Collective excellence
-        </h2>
-      </div>
-
-      <div class="collective__right">
-        <!-- Layer 4: unique, benefit-led copy -->
-        <p class="collective__body">
-          We are a collective of talented individuals with proven pedigree in luxury hospitality
-          and interior design. Building on our expertise across 50+ years and six continents,
-          we deliver the diversity of experience, skill, and creative vision to meet any design challenge —
-          from bespoke residences to landmark resort destinations.
-        </p>
-        <!-- Layer 6: keyword-rich anchor text for internal link -->
-        <a href="#projects" class="collective__btn" id="btn-our-people" aria-label="Meet our hospitality design specialists">Our People</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       SECTION 5 — LEADERSHIP TEAM
-       SEO: Person schema candidates, named individuals
-  ═══════════════════════════════════════════ -->
-  <section class="leadership" id="specialists" aria-labelledby="leadership-heading">
-    <div class="leadership__inner">
-
-      <div class="leadership__left">
-        <h2 class="leadership__heading" id="leadership-heading">Leadership<br>team</h2>
-        <nav class="leadership__nav" aria-label="Leadership carousel navigation">
-          <button class="leadership__arrow" aria-label="Previous team member" type="button">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <button class="leadership__arrow" aria-label="Next team member" type="button">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-        </nav>
-      </div>
-
-      <div class="leadership__right">
-        <div class="leadership__grid">
-
-          <article class="leader-card" id="leader-1" aria-label="Ian Carr, Partner and Co-CEO">
-            <div class="leader-card__img-wrap">
-              <img
-                src="images/pexels-jonathanborba-3255245.jpg"
-                alt="Ian Carr — Partner & Co-CEO, END Design Studios Singapore"
-                class="leader-card__img"
-                loading="lazy"
-                width="300"
-                height="375"
-              />
-            </div>
-            <div class="leader-card__info">
-              <p class="leader-card__location">END | SINGAPORE</p>
-              <p class="leader-card__name">Ian Carr</p>
-              <p class="leader-card__role">Partner &amp; Co-CEO</p>
-            </div>
-          </article>
-
-          <article class="leader-card" id="leader-2" aria-label="Chris Godfrey, Partner and Co-CEO">
-            <div class="leader-card__img-wrap">
-              <img
-                src="images/pexels-kseniachernaya-3952034.jpg"
-                alt="Chris Godfrey — Partner & Co-CEO, END Design Studios Singapore"
-                class="leader-card__img"
-                loading="lazy"
-                width="300"
-                height="375"
-              />
-            </div>
-            <div class="leader-card__info">
-              <p class="leader-card__location">END | SINGAPORE</p>
-              <p class="leader-card__name">Chris Godfrey</p>
-              <p class="leader-card__role">Partner &amp; Co-CEO</p>
-            </div>
-          </article>
-
-          <article class="leader-card" id="leader-3" aria-label="Meghann Day, Partner and President The Americas">
-            <div class="leader-card__img-wrap">
-              <img
-                src="images/pexels-rachel-claire-4825713.jpg"
-                alt="Meghann Day — Partner & President The Americas, END Design Studios San Francisco"
-                class="leader-card__img"
-                loading="lazy"
-                width="300"
-                height="375"
-              />
-            </div>
-            <div class="leader-card__info">
-              <p class="leader-card__location">END | SAN FRANCISCO</p>
-              <p class="leader-card__name">Meghann Day</p>
-              <p class="leader-card__role">Partner &amp; President The Americas</p>
-            </div>
-          </article>
-
-        </div>
-
-        <div class="leadership__progress" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" aria-label="Leadership carousel progress">
-          <div class="leadership__progress-bar"></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  </main><!-- end #main-content -->
-
-  <!-- ═══════════════════════════════════════════
-       FOOTER
-       SEO: Footer nav with internal links (Layer 6), contact info
-  ═══════════════════════════════════════════ -->
-  <footer class="footer" id="contact" role="contentinfo">
-    <div class="footer__inner">
-      <div class="footer__left">
-        <a href="/" class="footer__logo" aria-label="END Design Studios home">EDL</a>
-        <p class="footer__tagline">End Design Studios</p>
-      </div>
-
-      <!-- Layer 6: Internal linking in footer -->
-      <nav class="footer__nav" aria-label="Footer navigation">
-        <a href="#about" class="footer__nav-link">About</a>
-        <a href="#expertise" class="footer__nav-link">Expertise</a>
-        <a href="#projects" class="footer__nav-link">Projects</a>
-        <a href="#specialists" class="footer__nav-link">Specialists</a>
-        <a href="#contact" class="footer__nav-link">Contact</a>
-      </nav>
-
-      <div class="footer__right">
-        <p class="footer__copy">© 2025 End Design Studios. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
+  <script src="main.js?v=2"></script>
 </body>
 </html>
